@@ -1,17 +1,22 @@
 <template>
   <a :href="sourceLink" target="_blank" class="clickable-card">
     <div class="project-card">
-    <img :src="image" alt="Project Logo" class="project-image" />
+      <img :src="image" alt="Project Logo" class="project-image" />
       <div class="project-info">
-        <div class="project-header">
-          <h2 class="project-title">{{ title }}</h2>
+        <div>
+          <div class="project-header">
+            <h2 class="project-title">{{ title }}</h2>
+          </div>
+          <span class="project-year">{{ year }}</span>
+          <p class="project-description">{{ description }}</p>
         </div>
-        <span class="project-year">{{ year }}</span>
-        <p class="project-description">{{ description }}</p>
-        <a :href="sourceLink" target="_blank" class="source-link">
-          <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="GitHub" class="github-icon" />
-          Code
-        </a>
+        <div>
+          <a :href="sourceLink" target="_blank" class="source-link">
+            <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="GitHub"
+              class="github-icon" />
+            Code
+          </a>
+        </div>
       </div>
     </div>
   </a>
@@ -55,9 +60,6 @@ export default {
   align-items: flex-start;
   padding: 20px;
   border-radius: 10px;
-  //background-color: #2c2f31;
-
-  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: white;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -76,7 +78,9 @@ export default {
 }
 
 .project-info {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-header {
@@ -115,11 +119,13 @@ export default {
 
 .source-link:active {
   background-color: #b1b0b0;
-  transform: scale(0.98); /* Shrinks slightly when clicked */
+  transform: scale(0.98);
+  /* Shrinks slightly when clicked */
 }
 
 .source-link.mousedown {
-  background-color: rgba(44, 47, 49, 0.9); /* Darkens background when clicked */
+  background-color: rgba(44, 47, 49, 0.9);
+  /* Darkens background when clicked */
 }
 
 .github-icon {

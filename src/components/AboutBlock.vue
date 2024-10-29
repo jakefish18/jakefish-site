@@ -6,10 +6,11 @@ import MyImage from '@/assets/MyPhoto.png';
   <div class="about-block">
     <div class="text-block">
       <span class="my-name">Garifullin Insaf</span>
-      <span class="short-description">Hi! I’m <span style="color: #FEDD2C">18 y.o.</span> backend developer from <span style="color: #FEDD2C">Innopolis, Russia</span>.</span>
+      <span class="short-description">Hi! I’m <span style="color: #FEDD2C">18 y.o.</span> backend developer from <span
+          style="color: #FEDD2C">Innopolis, Russia</span>.</span>
     </div>
     <div class="image-block">
-    <img :src="MyImage" alt="It's me)"/>
+      <img :src="MyImage" alt="It's me)" />
     </div>
   </div>
 </template>

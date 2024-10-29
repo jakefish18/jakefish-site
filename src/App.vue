@@ -1,14 +1,23 @@
 <template>
   <HeaderBar class="app-header"/>
   <div class="content">
-    <AboutBlock/>
+    <section id="about">
+      <AboutBlock/>
+    </section>
     <DividingLine/>
-    <TechStack/>
+    <section id="tech-stack">
+      <TechStack/>
+    </section>
     <DividingLine/>
-    <ProjectsList/>
+    <section id="projects">
+      <ProjectsList/>
+    </section>
     <DividingLine/>
-    <AchievmentsList/>
+    <section id="achievements">
+      <AchievmentsList/>
+    </section>
     <DividingLine/>
+    <MyContacts/>
   </div>
 </template>
 
@@ -19,10 +28,12 @@ import DividingLine from "@/components/DividingLine.vue";
 import TechStack from "@/components/TechStack.vue";
 import ProjectsList from "@/components/ProjectsList.vue";
 import AchievmentsList from "@/components/AchievementsList.vue";
+import MyContacts from "@/components/MyContacts.vue";
 
 export default {
   name: 'App',
   components: {
+    MyContacts,
     AchievmentsList,
     ProjectsList,
     DividingLine,
@@ -38,10 +49,20 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
+  padding: 0;
   background-color: #232B2B;
+}
+
+section {
+  padding-top: 100px; /* Offset equal to the height of your sticky header */
+  margin-top: -100px; /* Pull the section up to compensate */
 }
 
 .app-header {
@@ -54,7 +75,7 @@ body {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   min-height: 100vh;
   margin-right: 20%;
   margin-left: 20%;

@@ -1,7 +1,7 @@
 <template>
   <div class="achievement-block">
-    <span class="achievement-year">{{ year }}</span>
-    <span class="achievement-title">{{ title }}</span>
+    <div class="achievement-year">{{ year }}</div>
+    <div class="achievement-title">{{ title }}</div>
   </div>
 </template>
 
@@ -24,8 +24,10 @@ export default {
 <style scoped>
 .achievement-block {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
   align-items: center;
-  background-color: #2c2f31;
   border-radius: 30px;
   padding: 10px 20px;
   color: white;
@@ -35,15 +37,26 @@ export default {
 .achievement-year {
   background-color: #d16d5e;
   color: white;
-  //border-radius: 30px 0 0 30px;
-  padding: 30px;
-  height: 100%;
-  font-size: 1rem;
+  border-radius: 30px 0 0 30px;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .achievement-title {
-  margin-left: 20px;
-  font-size: 1rem;
+  background-color: #1C2121;
   color: white;
+  width: 100%;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0 30px 30px 0;
+  width: 900px;
+  font-size: 1.5rem;
 }
 </style>
