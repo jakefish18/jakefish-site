@@ -8,6 +8,14 @@ import MyImage from '@/assets/MyPhoto.png';
       <span class="my-name">Garifullin Insaf</span>
       <span class="short-description">Hi! I’m <span style="color: #FEDD2C">18 y.o.</span> backend developer from <span
           style="color: #FEDD2C">Innopolis, Russia</span>.</span>
+      <!-- <div class="some-facts">
+        <span>
+          Borned in the lovely middle of nowhere: <span style="color: #F0DF85">Bashkortostan, Dumeevo</span>
+        </span>
+        <span>
+          Languages: <span style="color: #F0DF85">Tatarish, Russian, English</span>
+        </span>
+      </div> -->
     </div>
     <div class="image-block">
       <img :src="MyImage" alt="It's me)" />
@@ -21,7 +29,6 @@ import MyImage from '@/assets/MyPhoto.png';
   flex-direction: row;
   justify-content: center;
   color: white;
-  gap: 30px;
 }
 
 .text-block {
@@ -42,4 +49,11 @@ import MyImage from '@/assets/MyPhoto.png';
   font-size: 40px;
   height: 100%;
 }
+
+/* 
+.some-facts {
+  display: flex;
+  flex-direction: column;
+  color: #b1b1b1;
+} */
 </style>

@@ -3,6 +3,7 @@
 import TechCard from "@/components/TechCard.vue"
 import CHJLogo from "@/assets/CHJLogo.png"
 import GolangLogo from "@/assets/GolangLogo.png"
+import AiogramLogo from "@/assets/AiogramLogo.png"
 </script>
 
 <template>
@@ -30,10 +31,10 @@ import GolangLogo from "@/assets/GolangLogo.png"
       image-path="https://www.cdnlogo.com/logos/c/57/clickhouse.svg" />
     <TechCard title="Redis" description="as a caching DBMS"
       image-path="https://www.stackery.io/assets/images/posts/redis-cache-cluster-support/featured.svg" />
-    <TechCard title="Redis" description="as a caching DBMS"
-      image-path="https://www.stackery.io/assets/images/posts/redis-cache-cluster-support/featured.svg" />
     <TechCard title="FastAPI" description="as a Python backend framework"
       image-path="https://cdn.worldvectorlogo.com/logos/fastapi.svg" />
+    <TechCard title="Aiogram" description="as a Python library for telegram bot development"
+      :image-path="AiogramLogo" />
     <TechCard title="Flask" description="as a dark past..."
       image-path="https://static-00.iconduck.com/assets.00/programming-language-flask-icon-2048x1826-wf5k5ugs.png" />
   </div>

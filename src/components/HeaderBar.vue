@@ -1,20 +1,28 @@
 <template>
   <header>
     <nav>
-      <a href="#about"><div class="nav-element">About</div></a>
-      <a href="#tech-stack"><div class="nav-element">TechStack</div></a>
-      <a href="#projects"><div class="nav-element">Projects</div></a>
-      <a href="#achievements"><div class="nav-element">Achievements</div></a>
+      <a href="#about">
+        <div class="nav-element">About</div>
+      </a>
+      <a href="#tech-stack">
+        <div class="nav-element">TechStack</div>
+      </a>
+      <a href="#projects">
+        <div class="nav-element">Projects</div>
+      </a>
+      <a href="#achievements">
+        <div class="nav-element">Achievements</div>
+      </a>
     </nav>
-<!--    <nav>-->
-<!--      <ul>-->
-<!--        <li><a>About</a></li>-->
-<!--        <li><a>TechStack</a></li>-->
-<!--        <li><a>Projects</a></li>-->
-<!--        <li><a>Achievements</a></li>-->
-<!--        <li><a>Contacts</a></li>-->
-<!--      </ul>-->
-<!--    </nav>-->
+    <!--    <nav>-->
+    <!--      <ul>-->
+    <!--        <li><a>About</a></li>-->
+    <!--        <li><a>TechStack</a></li>-->
+    <!--        <li><a>Projects</a></li>-->
+    <!--        <li><a>Achievements</a></li>-->
+    <!--        <li><a>Contacts</a></li>-->
+    <!--      </ul>-->
+    <!--    </nav>-->
   </header>
 </template>
 
@@ -42,7 +50,6 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  //background-color: #2a73b2;
   height: 100%;
 }
 

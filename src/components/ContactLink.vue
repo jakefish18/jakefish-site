@@ -31,4 +31,12 @@ a {
   width: 70px;
   height: 70px;
 }
+
+.contact-icon:hover {
+  opacity: 0.8;
+}
+
+.contact-icon:active {
+  opacity: 0.7;
+}
 </style>

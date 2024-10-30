@@ -1,6 +1,6 @@
 <script setup>
 
-import AchievementBlock from "@/components/AchievementBlock.vue";
+import AchievementBlock from "@/components/AchievementBlock.vue"
 </script>
 
 <template>
@@ -8,15 +8,18 @@ import AchievementBlock from "@/components/AchievementBlock.vue";
     Achievements
   </div>
   <div class="achievements-list">
-    <AchievementBlock title="Призёр регионального этапа конкурса &quot;Большие вызовы&quot;" year="2022.03"/>
-    <AchievementBlock title="Участник заключительного этапа DANO" year="2022.12"/>
-    <AchievementBlock title="Призёр регионального этапа ВсОШ по информатике" year="2023.01"/>
-    <AchievementBlock title="Призёр олимпиады Бельчонок по информатике" year="2023.02"/>
-    <AchievementBlock title="Победитель олимпиады Шаг в Будущее по программированию" year="2024.01"/>
-    <AchievementBlock title="Призёр регионального этапа ВсОШ по информатике" year="2024.01"/>
-    <AchievementBlock title="Призёр олимпиады Бельчонок по информатике" year="2024.02"/>
-    <AchievementBlock title="Призёр олимпиады им. И. Я. Верченко по комьютерной безопасноти" year="2024.03"/>
-    <AchievementBlock title="Призёр олимпиады PROD по промышленной разработке" year="2024.03"/>
+    <AchievementBlock title="Prize-winner of the regional stage of the &quot;Grand Challenges&quot; competition"
+      year="2022.03" />
+    <AchievementBlock title="Participant in the final stage of &quot;DANO&quot;" year="2022.12" />
+    <AchievementBlock title="Prize-winner of the regional stage of the All-Russian Informatics School Olympiad"
+      year="2023.01" />
+    <AchievementBlock title="Prize-winner of the &quot;Belchonok&quot; olympiad in informatics" year="2023.02" />
+    <AchievementBlock title="Winner of the Step into the Future olympiad in programming" year="2024.01" />
+    <AchievementBlock title="Prize-winner of the regional stage of the All-Russian Informatics School Olympiad"
+      year="2024.01" />
+    <AchievementBlock title="Prize-winner of the &quot;Belchonok&quot; olympiad in informatics" year="2024.02" />
+    <AchievementBlock title="Prize-winner of the I. Y. Verchenko olympiad in cybersecurity" year="2024.03" />
+    <AchievementBlock title="Prize-winner of the PROD olympiad in industrial development" year="2024.04" />
   </div>
 </template>
 
