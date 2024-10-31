@@ -5,21 +5,18 @@ import AchievementBlock from "@/components/AchievementBlock.vue"
 
 <template>
   <div class="title">
-    Achievements
+    {{ $t('header_achievements') }}
   </div>
   <div class="achievements-list">
-    <AchievementBlock title="Prize-winner of the regional stage of the &quot;Grand Challenges&quot; competition"
-      year="2022.03" />
-    <AchievementBlock title="Participant in the final stage of &quot;DANO&quot;" year="2022.12" />
-    <AchievementBlock title="Prize-winner of the regional stage of the All-Russian Informatics School Olympiad"
-      year="2023.01" />
-    <AchievementBlock title="Prize-winner of the &quot;Belchonok&quot; olympiad in informatics" year="2023.02" />
-    <AchievementBlock title="Winner of the Step into the Future olympiad in programming" year="2024.01" />
-    <AchievementBlock title="Prize-winner of the regional stage of the All-Russian Informatics School Olympiad"
-      year="2024.01" />
-    <AchievementBlock title="Prize-winner of the &quot;Belchonok&quot; olympiad in informatics" year="2024.02" />
-    <AchievementBlock title="Prize-winner of the I. Y. Verchenko olympiad in cybersecurity" year="2024.03" />
-    <AchievementBlock title="Prize-winner of the PROD olympiad in industrial development" year="2024.04" />
+    <AchievementBlock :title="$t('big_challenges_prize_winner')" year="2022.03" />
+    <AchievementBlock :title="$t('dano_participant')" year="2022.12" />
+    <AchievementBlock :title="$t('vsosh_prize_winner')" year="2023.01" />
+    <AchievementBlock :title="$t('belchonok_prize_winner')" year="2023.02" />
+    <AchievementBlock :title="$t('step_into_the_future_winner')" year="2024.01" />
+    <AchievementBlock :title="$t('vsosh_prize_winner')" year="2024.01" />
+    <AchievementBlock :title="$t('belchonok_prize_winner')" year="2024.02" />
+    <AchievementBlock :title="$t('cybersecurity_olympiad_prize_winner')" year="2024.03" />
+    <AchievementBlock :title="$t('prod_prize_winner')" year="2024.04" />
   </div>
 </template>
 

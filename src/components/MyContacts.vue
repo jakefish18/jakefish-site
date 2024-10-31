@@ -6,7 +6,7 @@ import ContactLink from "@/components/ContactLink.vue";
 <template>
   <div class="container">
     <div class="title">
-      My contacts
+      {{ $t('my_contacts_h1') }}
     </div>
     <div class="contacts-list">
       <ContactLink app_link="https://github.com/jakefish18" svg_url="http://147.45.185.145/images/Github.svg" />

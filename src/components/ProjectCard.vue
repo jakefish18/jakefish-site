@@ -14,7 +14,7 @@
           <a :href="sourceLink" target="_blank" class="source-link">
             <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="GitHub"
               class="github-icon" />
-            Code
+            {{ $t('code_button_text') }}
           </a>
         </div>
       </div>

@@ -2,16 +2,16 @@
   <header>
     <nav>
       <a href="#about">
-        <div class="nav-element">About</div>
+        <div class="nav-element">{{ $t('header_about') }}</div>
       </a>
       <a href="#tech-stack">
-        <div class="nav-element">TechStack</div>
+        <div class="nav-element">{{ $t('header_techstack') }}</div>
       </a>
       <a href="#projects">
-        <div class="nav-element">Projects</div>
+        <div class="nav-element">{{ $t('header_projects') }}</div>
       </a>
       <a href="#achievements">
-        <div class="nav-element">Achievements</div>
+        <div class="nav-element">{{ $t('header_achievements') }}</div>
       </a>
     </nav>
     <!--    <nav>-->

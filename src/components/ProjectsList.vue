@@ -13,31 +13,27 @@ import MyLogo from "@/assets/MyLogo.jpg"
 
 <template>
   <div class="title">
-    Projects
+    {{ $t('header_projects') }}
   </div>
   <div class="project-cards">
     <ProjectCard title="GoodTube" source-link="https://github.com/jakefish18/good_youtube"
-      description="An app to filter trash content from YouTube" :image="GoodTubeLogo" year="2021" />
-    <ProjectCard title="How Many Days Till Bot" source-link="https://github.com/jakefish18/how-many-days-till-bot"
-      description="A Telegram bot for a countdown before some event" :image="HowManyDaysTillBotLogo" year="2022" />
+      :description="$t('goodtube_description')" :image="GoodTubeLogo" year="2021" />
+    <ProjectCard title="" source-link="https://github.com/jakefish18/how-many-days-till-bot"
+      :description="$t('how_many_days_till_bot_description')" :image="HowManyDaysTillBotLogo" year="2022" />
     <ProjectCard title="Avito Offers Notifier" source-link="https://github.com/jakefish18/AvitoOffersNotifier"
-      description="A Telegram bot for monitoring new offers from avito.ru" :image="AvitoParserBotLogo" year="2022" />
+      :description="$t('avito_offers_notifier_description')" :image="AvitoParserBotLogo" year="2022" />
     <ProjectCard title="UesugiToolBot" source-link="https://github.com/jakefish18/UesugiToolBot"
-      description="A Telegram bot for learning using flashcards" :image="UesugiToolBotLogo" year="2023" />
+      :description="$t('uesugi_tool_bot_description')" :image="UesugiToolBotLogo" year="2023" />
     <ProjectCard title="Eljur parser" source-link="https://github.com/jakefish18/eljur-parser"
-      description="A parser to get the student grades from eljur.ru" :image="EljurLogo" year="2023" />
-    <ProjectCard title="This site" source-link="https://github.com/jakefish18/jakefish-site"
-      description="A personal website written in Vue.js" :image="MyLogo" year="2024" />
+      :description="$t('eljur_parser_description')" :image="EljurLogo" year="2023" />
+    <ProjectCard :title="$t('personal_website_project_name')" source-link="https://github.com/jakefish18/jakefish-site"
+      :description="$t('personal_website_description')" :image="MyLogo" year="2024" />
     <ProjectCard title="StackSMM" source-link="https://github.com/Central-University-IT-prod/PROD-Slonyary"
-      description="A website to facilitate the work of SMM managers. Project was made by Slonyars team for the PROD olympiad"
-      :image="StackSMMLogo" year="2024" />
+      :description="$t('stack_smm_description')" :image="StackSMMLogo" year="2024" />
     <ProjectCard title="WaniKani parser" source-link="https://github.com/jakefish18/wanikani-parser"
-      description="An asynchronous parser for wanikani.com to create anki cards with kanji, radicals, and vocabulary"
-      :image="WaniKaniLogo" year="2024" />
+      :description="$t('wanikani_parser_description')" :image="WaniKaniLogo" year="2024" />
   </div>
-  <div class="ps">
-    There are other projects, but they are not open-sourced, too small, or I don't want to write README.md for them...
-  </div>
+  <div class="ps"> {{ $t('ps_after_projects') }} </div>
 </template>
 
 <style scoped>

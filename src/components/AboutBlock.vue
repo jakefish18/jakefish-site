@@ -5,9 +5,10 @@ import MyImage from '@/assets/MyPhoto.png';
 <template>
   <div class="about-block">
     <div class="text-block">
-      <span class="my-name">Garifullin Insaf</span>
-      <span class="short-description">Hi! I’m <span style="color: #FEDD2C">18 y.o.</span> backend developer from <span
-          style="color: #FEDD2C">Innopolis, Russia</span>.</span>
+      <span class="my-name">{{ $t('person_name') }}</span>
+      <span class="short-description">
+        <p v-html="$t('person_short_description')"></p>
+      </span>
       <!-- <div class="some-facts">
         <span>
           Borned in the lovely middle of nowhere: <span style="color: #F0DF85">Bashkortostan, Dumeevo</span>

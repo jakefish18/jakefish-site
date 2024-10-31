@@ -25,7 +25,7 @@
     "uesugi_tool_bot_description": "A Telegram bot for learning using flashcards",
     "eljur_parser_description": "A parser to get the student grades from eljur.ru",
     "personal_website_project_name": "Personal Website",
-    "personal_websitre_description": "A personal website written in Vue.js",
+    "personal_website_description": "A personal website written in Vue.js",
     "stack_smm_description": "A website to facilitate the work of SMM managers. Project was made by Slonyars team for the PROD olympiad",
     "wanikani_parser_description": "An asynchronous parser for wanikani.com to create anki cards with kanji, radicals, and vocabulary",
     "code_button_text": "Code",
