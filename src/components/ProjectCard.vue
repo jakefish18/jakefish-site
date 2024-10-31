@@ -3,14 +3,14 @@
     <div class="project-card">
       <img :src="image" alt="Project Logo" class="project-image" />
       <div class="project-info">
-        <div>
+        <div class="project-info-text">
           <div class="project-header">
             <h2 class="project-title">{{ title }}</h2>
           </div>
           <span class="project-year">{{ year }}</span>
           <p class="project-description">{{ description }}</p>
         </div>
-        <div>
+        <div class="project-info-button">
           <a :href="sourceLink" target="_blank" class="source-link">
             <img src="https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt="GitHub"
               class="github-icon" />

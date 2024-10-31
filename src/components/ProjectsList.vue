@@ -33,7 +33,7 @@ import MyLogo from "@/assets/MyLogo.jpg"
     <ProjectCard title="WaniKani parser" source-link="https://github.com/jakefish18/wanikani-parser"
       :description="$t('wanikani_parser_description')" :image="WaniKaniLogo" year="2024" />
   </div>
-  <div class="ps"> {{ $t('ps_after_projects') }} </div>
+  <!-- <div class="ps"> {{ $t('ps_after_projects') }} </div> -->
 </template>
 
 <style scoped>
@@ -55,11 +55,12 @@ import MyLogo from "@/assets/MyLogo.jpg"
   height: 70%;
 }
 
+/* 
 .ps {
   display: flex;
   flex-direction: row;
   justify-content: center;
   color: #ffffff;
   align-self: center;
-}
+} */
 </style>
