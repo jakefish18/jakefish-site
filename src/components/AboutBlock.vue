@@ -25,6 +25,10 @@ import MyImage from '@/assets/MyPhoto.png';
 </template>
 
 <style scoped>
+p {
+  all: unset;
+}
+
 .about-block {
   display: flex;
   flex-direction: row;

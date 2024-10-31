@@ -18,7 +18,7 @@ import MyLogo from "@/assets/MyLogo.jpg"
   <div class="project-cards">
     <ProjectCard title="GoodTube" source-link="https://github.com/jakefish18/good_youtube"
       :description="$t('goodtube_description')" :image="GoodTubeLogo" year="2021" />
-    <ProjectCard title="" source-link="https://github.com/jakefish18/how-many-days-till-bot"
+    <ProjectCard title="HowManyDaysTillBot" source-link="https://github.com/jakefish18/how-many-days-till-bot"
       :description="$t('how_many_days_till_bot_description')" :image="HowManyDaysTillBotLogo" year="2022" />
     <ProjectCard title="Avito Offers Notifier" source-link="https://github.com/jakefish18/AvitoOffersNotifier"
       :description="$t('avito_offers_notifier_description')" :image="AvitoParserBotLogo" year="2022" />

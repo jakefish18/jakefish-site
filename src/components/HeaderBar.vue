@@ -1,34 +1,36 @@
 <template>
   <header>
     <nav>
-      <a href="#about">
-        <div class="nav-element">{{ $t('header_about') }}</div>
-      </a>
-      <a href="#tech-stack">
-        <div class="nav-element">{{ $t('header_techstack') }}</div>
-      </a>
-      <a href="#projects">
-        <div class="nav-element">{{ $t('header_projects') }}</div>
-      </a>
-      <a href="#achievements">
-        <div class="nav-element">{{ $t('header_achievements') }}</div>
-      </a>
+      <div class="empty-div"></div>
+      <div class="header-buttons">
+        <a href="#about">
+          <div class="nav-element">{{ $t('header_about') }}</div>
+        </a>
+        <a href="#tech-stack">
+          <div class="nav-element">{{ $t('header_techstack') }}</div>
+        </a>
+        <a href="#projects">
+          <div class="nav-element">{{ $t('header_projects') }}</div>
+        </a>
+        <a href="#achievements">
+          <div class="nav-element">{{ $t('header_achievements') }}</div>
+        </a>
+      </div>
+      <div class="toggle-button">
+        <ToggleButton />
+      </div>
     </nav>
-    <!--    <nav>-->
-    <!--      <ul>-->
-    <!--        <li><a>About</a></li>-->
-    <!--        <li><a>TechStack</a></li>-->
-    <!--        <li><a>Projects</a></li>-->
-    <!--        <li><a>Achievements</a></li>-->
-    <!--        <li><a>Contacts</a></li>-->
-    <!--      </ul>-->
-    <!--    </nav>-->
   </header>
 </template>
 
 <script>
+import ToggleButton from './ToggleButton.vue';
+
 export default {
   name: "HeaderBar",
+  components: {
+    ToggleButton,
+  }
 };
 </script>
 
@@ -63,6 +65,21 @@ a {
 }
 
 nav {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 100px;
+}
+
+.header-buttons {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.toggle-button {
   height: 100%;
   display: flex;
   flex-direction: row;
