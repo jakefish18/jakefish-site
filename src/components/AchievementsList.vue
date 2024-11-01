@@ -24,7 +24,7 @@ import AchievementBlock from "@/components/AchievementBlock.vue"
 .achievements-list {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
   padding: 10px;
 }
 
@@ -37,5 +37,15 @@ import AchievementBlock from "@/components/AchievementBlock.vue"
   font-size: 40px;
   font-weight: bold;
   height: 70%;
+}
+
+@media (max-width: 768px) {
+  .achievements-list {
+    gap: 10px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
 }
 </style>

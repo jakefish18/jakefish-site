@@ -67,4 +67,10 @@ import AiogramLogo from "@/assets/AiogramLogo.png"
   font-weight: bold;
   height: 70%;
 }
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+}
 </style>

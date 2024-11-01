@@ -64,6 +64,10 @@ import MyLogo from "@/assets/MyLogo.jpg"
     /* justify-content: center; */
     /* align-items: center; */
   }
+
+  .title {
+    font-size: 30px;
+  }
 }
 
 /* 

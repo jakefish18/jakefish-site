@@ -29,7 +29,6 @@ export default {
   gap: 0px;
   align-items: center;
   border-radius: 30px;
-  padding: 10px 20px;
   color: white;
   font-family: 'Arial', sans-serif;
 }
@@ -60,5 +59,19 @@ export default {
   font-size: 1.5rem;
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .achievement-title {
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .achievement-year {
+    font-size: 16px;
+    height: 35px;
+  }
+
+  .achievement-block {
+    border-radius: 15px;
+  }
+}
 </style>
