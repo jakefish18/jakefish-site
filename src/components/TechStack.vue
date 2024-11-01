@@ -46,6 +46,17 @@ import AiogramLogo from "@/assets/AiogramLogo.png"
   padding: 10px;
 }
 
+@media (max-width: 768px) {
+  .tech-stack-cards {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+}
+
 .title {
   display: flex;
   flex-direction: row;

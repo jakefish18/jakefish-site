@@ -55,6 +55,17 @@ import MyLogo from "@/assets/MyLogo.jpg"
   height: 70%;
 }
 
+@media (max-width: 768px) {
+  .project-cards {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+}
+
 /* 
 .ps {
   display: flex;

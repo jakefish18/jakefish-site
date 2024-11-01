@@ -59,4 +59,6 @@ export default {
   width: 900px;
   font-size: 1.5rem;
 }
+
+@media (max-width: 768px) {}
 </style>

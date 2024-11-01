@@ -1,23 +1,23 @@
 <template>
-  <HeaderBar class="app-header"/>
+  <HeaderBar class="app-header" />
   <div class="content">
     <section id="about">
-      <AboutBlock/>
+      <AboutBlock />
     </section>
-    <DividingLine/>
+    <DividingLine />
     <section id="tech-stack">
-      <TechStack/>
+      <TechStack />
     </section>
-    <DividingLine/>
+    <DividingLine />
     <section id="projects">
-      <ProjectsList/>
+      <ProjectsList />
     </section>
-    <DividingLine/>
+    <DividingLine />
     <section id="achievements">
-      <AchievmentsList/>
+      <AchievmentsList />
     </section>
-    <DividingLine/>
-    <MyContacts/>
+    <DividingLine />
+    <MyContacts />
   </div>
 </template>
 
@@ -61,14 +61,18 @@ body {
 }
 
 section {
-  padding-top: 100px; /* Offset equal to the height of your sticky header */
-  margin-top: -100px; /* Pull the section up to compensate */
+  padding-top: 100px;
+  /* Offset equal to the height of your sticky header */
+  margin-top: -100px;
+  /* Pull the section up to compensate */
 }
 
 .app-header {
   position: sticky;
-  top: 0; /* Stick to the top */
-  z-index: 1000; /* Ensure it's above other elements */
+  top: 0;
+  /* Stick to the top */
+  z-index: 1000;
+  /* Ensure it's above other elements */
 }
 
 .content {
@@ -79,5 +83,12 @@ section {
   min-height: 100vh;
   margin-right: 20%;
   margin-left: 20%;
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 3%;
+    margin-right: 3%;
+  }
 }
 </style>

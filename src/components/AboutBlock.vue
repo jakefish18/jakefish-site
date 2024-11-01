@@ -19,7 +19,7 @@ import MyImage from '@/assets/MyPhoto.png';
       </div> -->
     </div>
     <div class="image-block">
-      <img :src="MyImage" alt="It's me)" />
+      <img class="my-image" :src="MyImage" alt="It's me)" />
     </div>
   </div>
 </template>
@@ -53,6 +53,34 @@ p {
   font-weight: normal;
   font-size: 40px;
   height: 100%;
+}
+
+@media (max-width: 768px) {
+  .image-block {
+    width: 100px;
+    order: 1;
+  }
+
+  .text-block {
+    order: 2;
+  }
+
+  .about-block {
+    gap: 10px;
+  }
+
+  .my-name {
+    font-size: 40px;
+  }
+
+  .my-image {
+    width: 100px;
+    border-radius: 100%;
+  }
+
+  .short-description {
+    font-size: 25px;
+  }
 }
 
 /* 
