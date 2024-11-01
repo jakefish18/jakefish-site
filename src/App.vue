@@ -89,6 +89,7 @@ section {
   .content {
     margin-left: 3%;
     margin-right: 3%;
+    gap: 15px;
   }
 }
 </style>

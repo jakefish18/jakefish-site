@@ -28,8 +28,8 @@ a {
 }
 
 .contact-icon {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
 }
 
 .contact-icon:hover {
@@ -38,5 +38,12 @@ a {
 
 .contact-icon:active {
   opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+  }
 }
 </style>

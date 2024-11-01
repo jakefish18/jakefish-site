@@ -57,4 +57,11 @@ export default {
   font-size: 1rem;
   color: #b1b1b1;
 }
+
+@media (max-width: 768px) {
+  .tech-image {
+    width: 60px;
+    height: 60px;
+  }
+}
 </style>
