@@ -1,7 +1,8 @@
 <!-- Sidebar.vue -->
 <template>
-    <div v-if="isOpen" class="sidebar-overlay" @click.self="closeSidebar">
-        <div class="sidebar" :class="{ 'sidebar-open': !isClosing, 'sidebar-close': isClosing }">
+    <div class="sidebar-overlay" :class="{ 'overlay-active': sidebarOpen, 'sidebar-closed': !sidebarOpen }"
+        @click.self="closeSidebar">
+        <div class="sidebar" :class="{ 'sidebar-open': sidebarOpen, 'sidebar-close': isClosing }">
             <button @click="closeSidebar" class="close-button">×</button>
             <nav class="sidebar-nav">
                 <a href="#about" @click="closeSidebar">About</a>
@@ -17,7 +18,7 @@
 export default {
     name: "SideBar",
     props: {
-        isOpen: Boolean, // Receive open state from parent
+        sidebarOpen: Boolean,
         isClosing: Boolean,
         isOpening: Boolean
     },
@@ -30,7 +31,12 @@ export default {
 </script>
 
 <style scoped>
-/* Toggle Button */
+.overlay-active {
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+    /* Enable clicks only when sidebar is open */
+}
+
 .sidebar-toggle-button {
     font-size: 1.5rem;
     background: none;
@@ -43,7 +49,6 @@ export default {
     z-index: 1001;
 }
 
-/* Sidebar Overlay */
 .sidebar-overlay {
     position: fixed;
     top: 0;
@@ -73,7 +78,9 @@ export default {
     transition: transform 0.2s ease;
 }
 
+
 .sidebar-open {
+    left: 0px;
     transform: translateX(0);
 }
 
@@ -110,5 +117,9 @@ export default {
     align-self: flex-end;
     cursor: pointer;
     margin-top: 15px;
+}
+
+.sidebar-closed {
+    display: none;
 }
 </style>

@@ -20,14 +20,14 @@ import MenuSvg from "@/assets/Menu.svg"
           <div class="nav-element">{{ $t('header_achievements') }}</div>
         </a>
       </div>
-      <div class="menu-button" v-if="isMobile" @click="toggleSidebar">
+      <div class="menu-button" v-if="isMobile" @click="openSidebar">
         <img class="menu-image" :src="MenuSvg" />
       </div>
       <div class="toggle-button">
         <ToggleButton />
       </div>
       <div class="empty-div" v-if="isMobile"></div>
-      <SideBar :isOpen="sidebarOpen" :isClosing="isClosing" :isOpenings="isOpening" @close="closeSidebar" />
+      <SideBar :sidebarOpen="sidebarOpen" :isClosing="isClosing" :isOpening="isOpening" @close="closeSidebar" />
     </nav>
   </header>
 </template>
@@ -55,19 +55,19 @@ export default {
     handleResize() {
       this.isMobile = window.innerWidth <= 768
     },
-    toggleSidebar() {
+    openSidebar() {
+      this.sidebarOpen = true;
       this.isOpening = true;
       setTimeout(() => {
-        this.sidebarOpen = true;
-        this.isOpenings = false;
-      }, 300);
+        this.isOpening = false;
+      }, 200);
     },
     closeSidebar() {
       this.isClosing = true;
       setTimeout(() => {
-        this.sidebarOpen = false;
         this.isClosing = false;
-      }, 300); // 
+        this.sidebarOpen = false;
+      }, 200);
     }
   },
   components: {
