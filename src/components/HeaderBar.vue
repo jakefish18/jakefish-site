@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav>
-      <div class="empty-div"></div>
+      <div class="empty-div" v-if="!isMobile"></div>
       <div class="header-buttons" v-if="!isMobile">
         <a href="#about">
           <div class="nav-element">{{ $t('header_about') }}</div>
