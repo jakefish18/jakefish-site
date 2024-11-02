@@ -41,7 +41,7 @@ import AchievementBlock from "@/components/AchievementBlock.vue"
 
 @media (max-width: 768px) {
   .achievements-list {
-    gap: 10px;
+    gap: 20px;
   }
 
   .title {

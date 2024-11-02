@@ -1,3 +1,7 @@
+<script setup>
+import MenuSvg from "@/assets/Menu.svg"
+</script>
+
 <template>
   <header>
     <nav>
@@ -16,21 +20,29 @@
           <div class="nav-element">{{ $t('header_achievements') }}</div>
         </a>
       </div>
+      <div class="menu-button" v-if="isMobile" @click="toggleSidebar">
+        <img class="menu-image" :src="MenuSvg" />
+      </div>
       <div class="toggle-button">
         <ToggleButton />
       </div>
+      <div class="empty-div" v-if="isMobile"></div>
+      <SideBar :isOpen="sidebarOpen" :isClosing="isClosing" :isOpenings="isOpening" @close="closeSidebar" />
     </nav>
   </header>
 </template>
 
 <script>
-import ToggleButton from './ToggleButton.vue';
+import ToggleButton from "./ToggleButton.vue"
+import SideBar from "./SideBar.vue";
 
 export default {
   data() {
     return {
       sidebarOpen: false,
       isMobile: window.innerWidth <= 768,
+      isClosing: false,
+      isOpening: false
     };
   },
   mounted() {
@@ -44,14 +56,23 @@ export default {
       this.isMobile = window.innerWidth <= 768
     },
     toggleSidebar() {
-      this.sidebarOpen = !this.sidebarOpen
+      this.isOpening = true;
+      setTimeout(() => {
+        this.sidebarOpen = true;
+        this.isOpenings = false;
+      }, 300);
     },
     closeSidebar() {
-      this.sidebarOpen = false
+      this.isClosing = true;
+      setTimeout(() => {
+        this.sidebarOpen = false;
+        this.isClosing = false;
+      }, 300); // 
     }
   },
   components: {
     ToggleButton,
+    SideBar,
   }
 };
 </script>
@@ -106,5 +127,29 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 100%;
+  margin: 0;
+}
+
+.menu-image {
+  width: 40px;
+  height: 40px;
+}
+
+.empty-div {
+  width: 70px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+  }
 }
 </style>

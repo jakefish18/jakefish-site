@@ -51,7 +51,7 @@ p {
 
 .short-description {
   font-weight: normal;
-  font-size: 40px;
+  font-size: 35px;
   height: 100%;
 }
 
