@@ -2,7 +2,7 @@
   <header>
     <nav>
       <div class="empty-div"></div>
-      <div class="header-buttons">
+      <div class="header-buttons" v-if="!isMobile">
         <a href="#about">
           <div class="nav-element">{{ $t('header_about') }}</div>
         </a>
@@ -27,7 +27,29 @@
 import ToggleButton from './ToggleButton.vue';
 
 export default {
-  name: "HeaderBar",
+  data() {
+    return {
+      sidebarOpen: false,
+      isMobile: window.innerWidth <= 768,
+    };
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize)
+  },
+  beforeUnmount() {
+    window.removeEventListener('resize', this.handleResize)
+  },
+  methods: {
+    handleResize() {
+      this.isMobile = window.innerWidth <= 768
+    },
+    toggleSidebar() {
+      this.sidebarOpen = !this.sidebarOpen
+    },
+    closeSidebar() {
+      this.sidebarOpen = false
+    }
+  },
   components: {
     ToggleButton,
   }

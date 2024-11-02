@@ -62,12 +62,12 @@ export default {
 @media (max-width: 768px) {
   .achievement-title {
     font-size: 16px;
-    height: 35px;
+    height: 40px;
   }
 
   .achievement-year {
     font-size: 16px;
-    height: 35px;
+    height: 40px;
   }
 
   .achievement-block {

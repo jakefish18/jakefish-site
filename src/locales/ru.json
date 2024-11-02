@@ -25,7 +25,7 @@
     "uesugi_tool_bot_description": "Телеграм бот для зубрёжки с помощью карт",
     "eljur_parser_description": "Парсер оценок учеников с eljur.ru",
     "personal_website_project_name": "Персональный сайт",
-    "personal_websitre_description": "Персональный сайт, написанный на Vue.js",
+    "personal_website_description": "Персональный сайт, написанный на Vue.js",
     "stack_smm_description": "Вебсайт для упрощения работы SMM-менеджеров. Проект был сделан командой Слоняры на заключительном этапе олимпиады PROD",
     "wanikani_parser_description": "Асинхронный парсер для wanikani.com для создания anki карт с канджи, радикалами и словами",
     "code_button_text": "Код",
