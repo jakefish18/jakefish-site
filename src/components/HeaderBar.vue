@@ -27,7 +27,8 @@ import MenuSvg from "@/assets/Menu.svg"
         <ToggleButton />
       </div>
       <div class="empty-div" v-if="isMobile"></div>
-      <SideBar :sidebarOpen="sidebarOpen" :isClosing="isClosing" :isOpening="isOpening" @close="closeSidebar" />
+      <SideBar class="sidebar-in" :class="{ 'sidebar-open': sidebarOpen, 'sidebar-closed': !sidebarOpen }"
+        :sidebarOpen="sidebarOpen" :isClosing="isClosing" :isOpening="isOpening" @close="closeSidebar" />
     </nav>
   </header>
 </template>
@@ -56,8 +57,8 @@ export default {
       this.isMobile = window.innerWidth <= 768
     },
     openSidebar() {
-      this.sidebarOpen = true;
       this.isOpening = true;
+      this.sidebarOpen = true;
       setTimeout(() => {
         this.isOpening = false;
       }, 200);
@@ -145,6 +146,18 @@ nav {
 
 .empty-div {
   width: 70px;
+}
+
+.sidebar-in {
+  transition: transform 0.2s ease;
+}
+
+.sidebar-open {
+  transform: translateX(0);
+}
+
+.sidebar-closed {
+  transform: translateX(-100%);
 }
 
 @media (max-width: 768px) {

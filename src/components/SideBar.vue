@@ -1,8 +1,7 @@
 <!-- Sidebar.vue -->
 <template>
-    <div class="sidebar-overlay" :class="{ 'overlay-active': sidebarOpen, 'sidebar-closed': !sidebarOpen }"
-        @click.self="closeSidebar">
-        <div class="sidebar" :class="{ 'sidebar-open': sidebarOpen, 'sidebar-close': isClosing }">
+    <div class="sidebar-overlay" :class="{ 'overlay-active': sidebarOpen }" @click.self="closeSidebar">
+        <div class="sidebar">
             <button @click="closeSidebar" class="close-button">×</button>
             <nav class="sidebar-nav">
                 <a href="#about" @click="closeSidebar">About</a>
@@ -34,7 +33,6 @@ export default {
 .overlay-active {
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: auto;
-    /* Enable clicks only when sidebar is open */
 }
 
 .sidebar-toggle-button {
@@ -74,18 +72,6 @@ export default {
     flex-direction: column;
     padding: 20px;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
-    transform: translateX(-100%);
-    transition: transform 0.2s ease;
-}
-
-
-.sidebar-open {
-    left: 0px;
-    transform: translateX(0);
-}
-
-.sidebar-close {
-    transform: translateX(-100%);
 }
 
 .sidebar-nav {
@@ -117,9 +103,5 @@ export default {
     align-self: flex-end;
     cursor: pointer;
     margin-top: 15px;
-}
-
-.sidebar-closed {
-    display: none;
 }
 </style>
