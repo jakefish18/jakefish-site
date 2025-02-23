@@ -28,7 +28,7 @@ import MenuSvg from "@/assets/Menu.svg"
       </div>
       <div class="empty-div" v-if="isMobile"></div>
       <SideBar class="sidebar-in" :class="{ 'sidebar-open': sidebarOpen, 'sidebar-closed': !sidebarOpen }"
-        :sidebarOpen="sidebarOpen" :isClosing="isClosing" :isOpening="isOpening" @close="closeSidebar" />
+        :sidebarOpen="sidebarOpen" @close="closeSidebar" />
     </nav>
   </header>
 </template>

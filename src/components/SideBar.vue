@@ -17,9 +17,7 @@
 export default {
     name: "SideBar",
     props: {
-        sidebarOpen: Boolean,
-        isClosing: Boolean,
-        isOpening: Boolean
+        sidebarOpen: Boolean
     },
     methods: {
         closeSidebar() {
