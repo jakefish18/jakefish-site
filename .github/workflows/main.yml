@@ -31,7 +31,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT || 22 }}
-          source: "dist/*"
+          source: "dist/dist/*"
           target: ${{ secrets.REMOTE_PATH }}
 
       - name: Restart Server (Optional)
