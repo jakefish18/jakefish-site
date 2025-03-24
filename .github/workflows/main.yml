@@ -2,7 +2,8 @@ name: Deploy Vue App on Release
 
 on:
   release:
-    types: [published]  # Trigger when a release is published
+    types: [published]
+  workflow_dispatch: 
 
 jobs:
   deploy:
